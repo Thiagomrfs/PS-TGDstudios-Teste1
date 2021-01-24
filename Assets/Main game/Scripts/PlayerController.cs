@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
     {
         movementDirection = Input.GetAxisRaw("Horizontal");
         PlayerAnimator.SetFloat("PlayerSpeed", Mathf.Abs(movementDirection * movementSpeed));
+        
         Flip();
 
         if (Input.GetButtonDown("Jump") && isGrounded)
